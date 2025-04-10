@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Home </title>
+	
+	<!-- Link the CSS Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+</head>
+<body>
+
+	<h1> Welcome to My Website </h1>
+ 
+	<!-- Navigation Section -->
+	<nav class="navigation">
+		<ul>
+			<li> <a href="#home"> Home </a> </li>
+			<li> <a href="#about"> About </a> </li>
+			<li> <a href="#contact"> Contact </a> </li>
+		</ul>
+	</nav>
+	
+	<section id="home" class="home">
+		<h2> Home </h2>
+		<p> Welcome to the home page of my first website. </p>
+	</section>
+
+	<section id="about" class="about">
+		<h2> About </h2>
+		<p> I am learning about web development using HTML, CSS and JavaScript. This is a simple website containing what I have
+			learned so far. </p>
+	</section>
+
+	<!-- Ordered List with Roman Numerals -->
+    <section class="hobbies">
+        <h2> My Hobbies </h2>
+        <ol type="i">
+            <li> Playing football </li>
+            <li> Reading novels </li>
+            <li> Coding </li>
+            <li> Watching movies </li>
+            <li> Hiking </li>
+        </ol>
+    </section>
+    
+    <!-- External Image from Pexels -->
+    <section class="image">
+        <h2> External Image </h2>
+        <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg"
+             alt="Beautiful Scenery from Pexels" width="300">
+    </section>
+    
+    <!-- Contacts Table -->
+    <section class="contacts">
+        <h2> Contacts Table </h2>
+        <table border="1" width="60%" cellpadding="5px" class="contactTable">
+            <thead>
+                <tr>
+	                <th colspan="4"> CONTACTS </th>
+                </tr>
+                <tr>
+                    <th> Name </th>
+                    <th> Address </th>
+                    <th> Mobile </th>
+                    <th> Email </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Valerie Mbaka </td>
+                    <td> 99 Chavakali </td>
+                    <td> 0791777107 </td>
+                    <td> valeriembaka0@gmail.com </td>
+                </tr>
+                <tr>
+                    <td> Samuel Lumumba </td>
+                    <td> 456 Kirinyaga </td>
+                    <td> 0145862253 </td>
+                    <td> samuellumumba@gmail.com </td>
+                </tr>
+                <tr>
+                    <td> Joy Prudence  </td>
+                    <td> 789 Karen</td>
+                    <td> 0122334455</td>
+                    <td> joyprudence@gmail.com </td>
+                </tr>
+                <tr>
+                    <td> Yvonne Mwangi </td>
+                    <td> 101 Nyandarua </td>
+                    <td> 0778899005 </td>
+                    <td> yvonnemwangi@gmail.com </td>
+                </tr>
+                <tr>
+                    <td> Hykeryan Nambuchi </td>
+                    <td> 555 Bungoma </td>
+                    <td> 0113745568 </td>
+                    <td> hykeryan@gmail.com </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Registration Form -->
+    <section>
+        <h2> Registration Form </h2>
+	    <table width="48%" cellpadding="5px" class="registration">
+            <form action="#" method="POST">
+	        
+                <tr>
+	                <td>
+		                <label for="name"> Full Name: </label>
+	                </td>
+	            
+	                <td>
+		                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+	                </td>
+                </tr>
+            
+                <tr>
+	                <td>
+		                <label for="email"> Email: </label>
+	                </td>
+	            
+	                <td>
+		                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+	                </td>
+                </tr>
+            
+                <tr>
+	                <td>
+		                <label for="password"> Password: </label>
+	                </td>
+	            
+	                <td>
+		                <input type="password" id="password" name="password" placeholder="Create a password"
+                           required minlength="6">
+	                </td>
+                </tr>
+            
+                <tr>
+	                <td>
+		                <label for="dob"> Date of Birth: </label>
+	                </td>
+	            
+	                <td>
+		                <input type="date" id="dob" name="dob" required>
+	                </td>
+                </tr>
+           
+	            <tr>
+		            <td>
+			            <label for="namettl"> Title: </label>
+		            </td>
+		        
+		            <td>
+			            <select id="namettl" name="namettl" required>
+                            <option value="">  </option>
+	                        <option value="Mr"> Mr. </option>
+	                        <option value="Mrs"> Mrs. </option>
+	                        <option value="Miss"> Miss. </option>
+	                        <option value="Ms"> Ms. </option>
+	                        <option value="Dr"> Dr. </option>
+	                        <option value="Prof"> Prof. </option>
+                        </select>
+		            </td>
+	            </tr>
+            
+	            <tr>
+		            <td colspan="2" align="center">
+			            <button type="submit"> Submit </button>
+		            </td>
+	            </tr>
+	        
+            </form>
+	    </table>
+    </section>
+	
+	<!-- Footer Section -->
+	<footer id="contact" class="contact">
+		<p>Contact me at: <a href="mailto:valeriembaka0@gmail.com"> valeriembaka0@gmail.com </a> </p>
+		<p>&copy; Valerie Mbaka. All rights reserved.</p>
+	</footer>
+
+
+</body>
+</html>
